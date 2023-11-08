@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category and Value Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <table class="result-table">
+        <tr>
+            <th>Category</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>Alpha</td>
+            <td id="alphaResult"></td>
+        </tr>
+        <tr>
+            <td>Beta</td>
+            <td id="betaResult"></td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td id="charlieResult"></td>
+        </tr>
+    </table>
+
+    <script>
+        // Values for calculations
+        const values = {
+            A5: 2,
+            A7: 5,
+            A12: 3,
+            A13: 90,
+            A15: 80,
+            A20: 28,
+        };
+
+        // Calculate the results for each category
+        const alphaResult = values.A5 + values.A20;
+        const betaResult = values.A15 / values.A7;
+        const charlieResult = values.A13 * values.A12;
+
+        // Update the results in the HTML table
+        document.getElementById('alphaResult').textContent = alphaResult;
+        document.getElementById('betaResult').textContent = betaResult;
+        document.getElementById('charlieResult').textContent = charlieResult;
+    </script>
+</body>
+</html>
