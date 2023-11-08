@@ -1,0 +1,23 @@
+/* Apply styles to the result table */
+.result-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Customize header row styles */
+.result-table th {
+    color: #000;
+}
+
+
+/* Add styles for each category cell */
+.result-table td {
+    font-weight: bold;
+}
